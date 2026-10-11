@@ -1,15 +1,21 @@
 import React from 'react';
 import './App.css';
-import Row from './components/Row'
-import requests from './requests'
+import search from'./search.css';
+import Row from './components/Row';
+import requests from './requests';
 import Banner from './components/Banner';
 import Nav from './components/Nav';
+import MovieSearch from './components/MovieSearch';
+
 
 function App() {
   return (
     <div className="app">
       <Nav />
+      
       <Banner />
+      <MovieSearch />
+      
       <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true} />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
@@ -20,6 +26,7 @@ function App() {
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </div>
+    
   );
 }
 
