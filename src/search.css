@@ -1,21 +1,19 @@
-.list  {
-  max-width: 230px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 24px;
-  background-color: white;
-}
-h3 {
+h3, p {
+  text-align: center;
   color: white;
   font-size: medium;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  color: white;
 }
 
 .row__posterLarge {
   height: 200px;
 }
-
 
 .movie_search {
   margin-left: 15px;
@@ -29,10 +27,3 @@ h3 {
   height: 28px;
   font-weight: bold;
 }
-
-
-
-
-
-
-

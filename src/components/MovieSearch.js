@@ -37,17 +37,15 @@ const MovieSearch = () => {
         {results.length > 0 ? (
           results.map((movie) => (
             <div key={movie.id}>
-
               <h3>{movie.title}</h3>
+              <p>{movie.release_date}</p>
 
-              {/* <p>{movie.release_date}</p> */}
-              
               <img
                 className={`row__poster ${"row__posterLarge"}`}
-                src={`${base_url}${movie.poster_path}{ movie.backdrop_path}`}
+                src={`${base_url}${movie.poster_path}`}
                 alt={movie.name} />
             </div>
-            
+
           ))
         ) : (
           <p>No results found.</p>
