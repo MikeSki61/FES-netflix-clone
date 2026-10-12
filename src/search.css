@@ -1,10 +1,21 @@
-.list {
-  width: 225px;
+.list  {
+  max-width: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   height: 24px;
-  font-size: large;
-  font-weight: bold;
   background-color: white;
 }
+h3 {
+  color: white;
+  font-size: medium;
+}
+
+.row__posterLarge {
+  height: 200px;
+}
+
 
 .movie_search {
   margin-left: 15px;
@@ -18,3 +29,10 @@
   height: 28px;
   font-weight: bold;
 }
+
+
+
+
+
+
+

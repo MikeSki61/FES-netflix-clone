@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="app">
       <Nav />
-      
       <Banner />
       <MovieSearch />
+
       
       <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true} />
