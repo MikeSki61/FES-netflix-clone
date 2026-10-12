@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
-// function Row({ title, fetchUrl, isLargeRow }) {
-//   const [movies, setMovies] = useState([]);
-// }
 
 const base_url = 'https://image.tmdb.org/t/p/original';
 
 const MovieSearch = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [results, setResults] = useState([]); // State to store search results
+  const [results, setResults] = useState([]); 
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -18,8 +15,7 @@ const MovieSearch = () => {
     event.preventDefault(); // Prevent the default form submission behavior
     const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=2a127865c8f2844264f4fe7e524d8b3f&query=${encodeURIComponent(searchTerm)}`); // Replace with your API key
     const data = await response.json();
-    // console.log(data);
-    setResults(data.results || []); // Update the results state with the search results
+    setResults(data.results || []); 
   };
 
   return (
@@ -56,7 +52,7 @@ const MovieSearch = () => {
 };
 
 export default MovieSearch;
-1
+
 
 
 
