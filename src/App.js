@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import search from'./search.css';
+import './search.css';
 import Row from './components/Row';
 import requests from './requests';
 import Banner from './components/Banner';
